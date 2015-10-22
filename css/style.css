@@ -1,18 +1,19 @@
 /******************************
 Flexbox Layout
 *******************************/
-          html {
-               height: 100%;
-              
-            }  
+html {
+   height: 100%;
+  
+}  
 
 
-            body {      
-               margin: 0;
-               height: 100%;
-               width: 100%; /* width needed for Firefox */
-
-            }
+body {      
+   margin: 0;
+   height: 100%;
+   width: 100%; /* width needed for Firefox */
+   background: url('../img/small_bkgd.png') top center no-repeat;
+   background-size: cover;
+}
 
 .header, .logo, .nav {
   display: -webkit-flex;
@@ -22,12 +23,22 @@ Flexbox Layout
    -webkit-align-items: flex-end;
    align-items: flex-end;
    margin-right: 20px;
-   margin-top: 0px;
+   margin-top: 10px;
   }
 
   .logo {
   order: -6;
 }
+
+ h1 {
+        height: 2rem;
+        color: white;
+        font-family: helvetica, sans-serif;
+        font-size: 1.5rem; /* font shorthand doesn’t work with rem in IE10 */
+        text-transform: uppercase;
+        text-shadow: 0 0 1.2rem hsla(0, 100%, 100%, .4);
+      }
+
 
 @media all and (min-width: 640px) {
 .header, .logo, .nav {
@@ -40,14 +51,27 @@ Flexbox Layout
    align-items: flex-end;
    margin-right: 20px;
    margin-top: 0px;
-  }
+ }
+   h1 {
+    height: 4rem;
+          color: white;
+          font-family: helvetica, sans-serif;
+          font-size: 2.5rem; /* font shorthand doesn’t work with rem in IE10 */
+          text-transform: uppercase;
+          text-shadow: 0 0 1.2rem hsla(0, 100%, 100%, .4);
+
+   }
+
+
 .logo {
   order: 6;
 }
 
-  body {
-//won't work
+body {
+    background: url('http://pencilskirtstudio.com/lois_2015/img/gallery2/F09_061029.jpg') top center no-repeat;
+  background-size: cover;
 }
+
 }
 
 
@@ -98,8 +122,7 @@ Treehouse Styling
 body {
   margin: 0;
   font-family: Helvetica;
-  background: url('http://pencilskirtstudio.com/lois_2015/img/gallery2/F09_061029.jpg') top center no-repeat;
-  background-size: cover;
+
 }
 
 .header {
@@ -153,13 +176,5 @@ body {
   color: #fff;*/
 }
 
-h1 {
-          
-          height: 4rem;
-          color: white;
-          font-family: helvetica, sans-serif;
-          font-size: 2rem; /* font shorthand doesn’t work with rem in IE10 */
-          text-transform: uppercase;
-          text-shadow: 0 0 1.2rem hsla(0, 100%, 100%, .4);
-        }
+
 
